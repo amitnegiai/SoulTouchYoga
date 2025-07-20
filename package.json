@@ -1,0 +1,69 @@
+{
+  "name": "soultouchyoga",
+  "version": "1.0.0",
+  "description": "A modern, responsive yoga website with interactive tools and WhatsApp integration",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages, Netlify, or Vercel'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "yoga",
+    "meditation",
+    "wellness",
+    "responsive",
+    "interactive",
+    "whatsapp",
+    "booking",
+    "portfolio",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": {
+    "name": "Pinky Negi",
+    "email": "pinkynegi19996@gmail.com",
+    "url": "https://soultouchyoga.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/soultouchyoga.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/soultouchyoga/issues"
+  },
+  "homepage": "https://soultouchyoga.com",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "dependencies": {},
+  "optionalDependencies": {},
+  "peerDependencies": {},
+  "bundledDependencies": [],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+} 

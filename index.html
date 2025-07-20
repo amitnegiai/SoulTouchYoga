@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulTouchYoga - Transform Your Life Through Yoga & Meditation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SoulTouchYoga</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Life Through Yoga & Meditation</h1>
+            <p>Discover inner peace, strength, and flexibility with our expert-led yoga sessions</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('pricing')">Start Your Journey</button>
+                <button class="btn-secondary" onclick="bookDemoClass()">Book Demo Class</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://i.postimg.cc/g0LVh80Q/Front.jpg" alt="Yoga meditation" class="hero-img">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-counter="500">0</div>
+                    <div class="stat-label">Happy Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-counter="50">0</div>
+                    <div class="stat-label">Expert Teachers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-counter="1000">0</div>
+                    <div class="stat-label">Classes Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-counter="5">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Slider Section -->
+    <section class="portfolio-slider">
+        <div class="container">
+            <h2>Our Studio Gallery</h2>
+            <p class="section-subtitle">Take a glimpse into our peaceful yoga studio and classes</p>
+            
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slide active">
+                        <img src="https://i.postimg.cc/rmS5nTx9/slide1.jpg" alt="Yoga Class">
+                        <div class="slide-content">
+                            <h3>Morning Yoga Classes</h3>
+                            <p>Start your day with energy and positivity</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/g0LVh80Q/Front.jpg" alt="Meditation Session">
+                        <div class="slide-content">
+                            <h3>Meditation Sessions</h3>
+                            <p>Find inner peace and mental clarity</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Studio Environment">
+                        <div class="slide-content">
+                            <h3>Peaceful Studio</h3>
+                            <p>Our serene environment for your practice</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Group Sessions">
+                        <div class="slide-content">
+                            <h3>Group Sessions</h3>
+                            <p>Connect with like-minded individuals</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/rmS5nTx9/slide1.jpg" alt="Private Sessions">
+                        <div class="slide-content">
+                            <h3>Private Sessions</h3>
+                            <p>Personalized attention for your practice</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev" onclick="changeSlide(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                        <span class="dot" onclick="goToSlide(3)"></span>
+                        <span class="dot" onclick="goToSlide(4)"></span>
+                        <span class="dot" onclick="goToSlide(5)"></span>
+                    </div>
+                    <button class="slider-btn next" onclick="changeSlide(1)">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Portfolio Section -->
+    <section class="owner-portfolio">
+        <div class="container">
+            <h2>Meet Our Founder</h2>
+            <p class="section-subtitle">Pinky Negi - Your Guide to Inner Peace & Wellness</p>
+            
+            <div class="owner-content">
+                <div class="owner-image">
+                    <img src="https://i.postimg.cc/k4rxvG64/owner.jpg" alt="Pinky Negi - Yoga Expert">
+                    <div class="owner-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Founder & Lead Instructor</span>
+                    </div>
+                </div>
+                
+                <div class="owner-details">
+                    <h3>Pinky Negi</h3>
+                    <p class="owner-title">Certified Yoga Instructor & Meditation Expert</p>
+                    
+                    <div class="owner-bio">
+                        <p>With over 8 years of dedicated practice and teaching experience, Pinky Negi is the heart and soul behind SoulTouchYoga. Based in the spiritual capital of Rishikesh, she brings authentic yoga wisdom combined with modern teaching methodologies to help students achieve physical, mental, and spiritual transformation.</p>
+                    </div>
+                    
+                    <div class="owner-credentials">
+                        <h4>Professional Credentials</h4>
+                        <ul>
+                            <li><i class="fas fa-certificate"></i> RYT-500 Advanced Yoga Teacher Certification</li>
+                            <li><i class="fas fa-meditation"></i> Vipassana Meditation Practitioner (10-day intensive)</li>
+                            <li><i class="fas fa-graduation-cap"></i> Bachelor's in Yoga Science & Philosophy</li>
+                            <li><i class="fas fa-heart"></i> Specialized in Hatha, Ashtanga & Therapeutic Yoga</li>
+                            <li><i class="fas fa-leaf"></i> Certified in Pranayama & Meditation Techniques</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="owner-specializations">
+                        <h4>Areas of Expertise</h4>
+                        <div class="specialization-tags">
+                            <span class="tag">Hatha Yoga</span>
+                            <span class="tag">Ashtanga Yoga</span>
+                            <span class="tag">Therapeutic Yoga</span>
+                            <span class="tag">Meditation</span>
+                            <span class="tag">Pranayama</span>
+                            <span class="tag">Stress Relief</span>
+                            <span class="tag">Mindfulness</span>
+                            <span class="tag">Yoga Philosophy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="owner-journey">
+                        <h4>Her Journey</h4>
+                        <p>Pinky's spiritual journey began in the sacred city of Rishikesh, where she immersed herself in the ancient wisdom of yoga. After completing her advanced teacher training, she dedicated herself to sharing the transformative power of yoga with students worldwide. Her recent completion of a 10-day Vipassana meditation retreat has deepened her understanding of mindfulness and inner peace.</p>
+                    </div>
+                    
+                    <div class="owner-mission">
+                        <h4>Her Mission</h4>
+                        <p>"My mission is to help every individual discover their inner strength, find peace in chaos, and achieve holistic wellness through authentic yoga practice. I believe yoga is not just physical exercise but a way of life that transforms the body, mind, and soul."</p>
+                    </div>
+                    
+                    <div class="owner-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Students Taught</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Classes Conducted</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Yoga Certifications</div>
+                        </div>
+                    </div>
+                    
+                    <div class="owner-cta">
+                        <button class="btn-primary" onclick="scrollToSection('contact')">Book a Session with Pinky</button>
+                        <button class="btn-secondary" onclick="scrollToSection('classes')">View Her Classes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured In Section -->
+    <section class="featured-in">
+        <div class="container">
+            <h2>Featured In</h2>
+            <p class="section-subtitle">Recognition from leading yoga and wellness platforms</p>
+            
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <i class="fas fa-award"></i>
+                    <h4>Yoga Alliance Certified</h4>
+                    <p>Internationally recognized yoga teacher certification</p>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-star"></i>
+                    <h4>Top Rated Instructor</h4>
+                    <p>5-star rated by 500+ students worldwide</p>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-medal"></i>
+                    <h4>Rishikesh Yoga Association</h4>
+                    <p>Member of the prestigious Rishikesh yoga community</p>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Vipassana Certified</h4>
+                    <p>Certified meditation practitioner from Dhamma Giri</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Pinky Section -->
+    <section class="why-choose-pinky">
+        <div class="container">
+            <h2>Why Choose Pinky?</h2>
+            <p class="section-subtitle">Discover what makes her teaching unique and transformative</p>
+            
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Authentic Rishikesh Wisdom</h3>
+                    <p>Trained in the spiritual capital of yoga, Pinky brings ancient wisdom combined with modern teaching methods.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Personalized Approach</h3>
+                    <p>Every student is unique. Pinky adapts her teaching to match your individual needs and goals.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-peace"></i>
+                    </div>
+                    <h3>Vipassana Experience</h3>
+                    <p>Her recent 10-day Vipassana retreat brings deep meditation insights to every session.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Building</h3>
+                    <p>Creates a supportive environment where students feel connected and motivated.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Continuous Learning</h3>
+                    <p>Always updating her knowledge with the latest yoga research and techniques.</p>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Holistic Wellness</h3>
+                    <p>Focuses on complete transformation - body, mind, and spirit - not just physical exercise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose SoulTouchYoga?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Makes your body more flexible</h3>
+                    <p>Gradually improve your flexibility through gentle, guided movements</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bone"></i>
+                    <h3>Strengthens joints naturally</h3>
+                    <p>Build strength in your joints through mindful yoga practices</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Boosts your immunity</h3>
+                    <p>Enhance your body's natural defense mechanisms</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Improves blood circulation</h3>
+                    <p>Promote better blood flow throughout your body</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Relaxes your body</h3>
+                    <p>Release tension and find deep relaxation</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Promotes calm breathing</h3>
+                    <p>Learn breathing techniques for inner peace</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Lowers stress</h3>
+                    <p>Reduce stress levels through mindful practice</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Improves mental focus</h3>
+                    <p>Sharpen your concentration and mental clarity</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Helps you sleep better</h3>
+                    <p>Improve your sleep quality naturally</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-battery-full"></i>
+                    <h3>Reduces tiredness</h3>
+                    <p>Boost your energy levels throughout the day</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-user"></i>
+                    <h3>Increases body awareness</h3>
+                    <p>Develop a deeper connection with your body</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-virus"></i>
+                    <h3>Prevents small injuries</h3>
+                    <p>Learn proper alignment to prevent injuries</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-stomach"></i>
+                    <h3>Enhances digestion</h3>
+                    <p>Improve your digestive health naturally</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Balances your energy</h3>
+                    <p>Find harmony between body, mind, and spirit</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Improves posture</h3>
+                    <p>Develop better posture and body alignment</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-walking"></i>
+                    <h3>Makes daily movements easier</h3>
+                    <p>Enhance your mobility and daily activities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Join Section -->
+    <section class="who-can-join">
+        <div class="container">
+            <h2>Who Can Join?</h2>
+            <div class="join-grid">
+                <div class="join-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Beginners with no yoga experience</h3>
+                    <p>Perfect for those starting their yoga journey</p>
+                </div>
+                <div class="join-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>People looking for gentle exercise</h3>
+                    <p>Low-impact movements suitable for all fitness levels</p>
+                </div>
+                <div class="join-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Suitable for all ages</h3>
+                    <p>From young adults to seniors, everyone is welcome</p>
+                </div>
+                <div class="join-card">
+                    <i class="fas fa-peace"></i>
+                    <h3>Those wanting to reduce stress</h3>
+                    <p>Find peace and tranquility in our sessions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <h2>Our Classes</h2>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="https://i.postimg.cc/rmS5nTx9/slide1.jpg" alt="Standard Yoga Session">
+                    </div>
+                    <h3>Standard Yoga Session</h3>
+                    <p>Perfect for beginners and intermediate practitioners</p>
+                    <ul>
+                        <li>60-minute guided session</li>
+                        <li>Breathing techniques</li>
+                        <li>Basic to intermediate poses</li>
+                        <li>Meditation practice</li>
+                    </ul>
+                </div>
+                <div class="class-card featured">
+                    <div class="class-image">
+                        <img src="https://i.postimg.cc/g0LVh80Q/Front.jpg" alt="3-Day Meditation Camp">
+                    </div>
+                    <h3>3-Day Meditation Camp</h3>
+                    <p>Deep dive into meditation and mindfulness</p>
+                    <ul>
+                        <li>3-day intensive program</li>
+                        <li>Advanced meditation techniques</li>
+                        <li>Mindfulness workshops</li>
+                        <li>Group activities</li>
+                        <li>Healthy meals included</li>
+                    </ul>
+                    <div class="featured-badge">Popular</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image">
+                        <img src="https://i.postimg.cc/rmS5nTx9/slide1.jpg" alt="Group Sessions">
+                    </div>
+                    <h3>Group Sessions</h3>
+                    <p>Connect with like-minded individuals</p>
+                    <ul>
+                        <li>Group energy and motivation</li>
+                        <li>Social interaction</li>
+                        <li>Shared learning experience</li>
+                        <li>Community building</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section class="interactive-tools">
+        <div class="container">
+            <h2>Free Yoga Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Meditation Timer</h3>
+                    <p>Perfect for your daily meditation practice</p>
+                    <div class="timer-container">
+                        <div class="timer-display">
+                            <span id="minutes">05</span>:<span id="seconds">00</span>
+                        </div>
+                        <div class="timer-controls">
+                            <button class="timer-btn" onclick="setTimer(5)">5 min</button>
+                            <button class="timer-btn" onclick="setTimer(10)">10 min</button>
+                            <button class="timer-btn" onclick="setTimer(15)">15 min</button>
+                            <button class="timer-btn" onclick="setTimer(20)">20 min</button>
+                        </div>
+                        <button class="btn-primary" onclick="startTimer()" id="startBtn">Start</button>
+                        <button class="btn-secondary" onclick="resetTimer()" id="resetBtn" style="display: none;">Reset</button>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-lungs"></i>
+                    </div>
+                    <h3>Breathing Exercise</h3>
+                    <p>Follow the circle to practice deep breathing</p>
+                    <div class="breathing-container">
+                        <div class="breathing-circle" id="breathingCircle">
+                            <div class="breathing-text">Breathe</div>
+                        </div>
+                        <button class="btn-primary" onclick="startBreathing()" id="breathingBtn">Start Breathing</button>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-yoga"></i>
+                    </div>
+                    <h3>Pose Gallery</h3>
+                    <p>Explore common yoga poses with instructions</p>
+                    <div class="pose-gallery">
+                        <div class="pose-item" onclick="showPoseDetails('mountain')">
+                            <i class="fas fa-mountain"></i>
+                            <span>Mountain Pose</span>
+                        </div>
+                        <div class="pose-item" onclick="showPoseDetails('warrior')">
+                            <i class="fas fa-user-shield"></i>
+                            <span>Warrior Pose</span>
+                        </div>
+                        <div class="pose-item" onclick="showPoseDetails('tree')">
+                            <i class="fas fa-tree"></i>
+                            <span>Tree Pose</span>
+                        </div>
+                        <div class="pose-item" onclick="showPoseDetails('child')">
+                            <i class="fas fa-baby"></i>
+                            <span>Child's Pose</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Booking Calendar -->
+    <section class="booking-calendar">
+        <div class="container">
+            <h2>Book Your Session</h2>
+            <p class="section-subtitle">Choose your preferred time and class type</p>
+            
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button class="calendar-nav" onclick="previousMonth()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <h3 id="currentMonth">January 2024</h3>
+                    <button class="calendar-nav" onclick="nextMonth()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="calendar-grid">
+                    <div class="calendar-weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="calendarDays" class="calendar-days"></div>
+                </div>
+                
+                <div class="time-slots">
+                    <h4>Available Time Slots</h4>
+                    <div class="slot-grid">
+                        <button class="time-slot" onclick="selectTimeSlot('6:00 AM - 7:00 AM')">6:00 AM - 7:00 AM</button>
+                        <button class="time-slot" onclick="selectTimeSlot('7:00 AM - 8:00 AM')">7:00 AM - 8:00 AM</button>
+                        <button class="time-slot" onclick="selectTimeSlot('8:00 AM - 9:00 AM')">8:00 AM - 9:00 AM</button>
+                        <button class="time-slot" onclick="selectTimeSlot('5:00 PM - 6:00 PM')">5:00 PM - 6:00 PM</button>
+                        <button class="time-slot" onclick="selectTimeSlot('6:00 PM - 7:00 PM')">6:00 PM - 7:00 PM</button>
+                        <button class="time-slot" onclick="selectTimeSlot('7:00 PM - 8:00 PM')">7:00 PM - 8:00 PM</button>
+                    </div>
+                </div>
+                
+                <div class="booking-summary">
+                    <h4>Booking Summary</h4>
+                    <div id="bookingDetails">
+                        <p>Select a date and time to book your session</p>
+                    </div>
+                    <button class="btn-primary" onclick="confirmBooking()" id="confirmBtn" disabled>Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pose Details Modal -->
+    <div id="poseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePoseModal()">&times;</span>
+            <div id="poseDetails"></div>
+        </div>
+    </div>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="teachers">
+        <div class="container">
+            <h2>Our Expert Teachers</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson">
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="qualification">RYT-500 Certified Yoga Instructor</p>
+                    <p>10+ years of experience in Hatha and Vinyasa yoga. Specializes in meditation and mindfulness practices.</p>
+                    <div class="teacher-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0 (120 reviews)</span>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                    </div>
+                    <h3>Michael Chen</h3>
+                    <p class="qualification">RYT-200 Certified Yoga Instructor</p>
+                    <p>Expert in Ashtanga and Power yoga. Focuses on strength building and flexibility.</p>
+                    <div class="teacher-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>4.9 (95 reviews)</span>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Priya Patel">
+                    </div>
+                    <h3>Priya Patel</h3>
+                    <p class="qualification">RYT-300 Certified Yoga Instructor</p>
+                    <p>Specializes in restorative yoga and meditation. Helps students find inner peace and balance.</p>
+                    <div class="teacher-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0 (88 reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Single Session</h3>
+                    <div class="price">₹500</div>
+                    <p>Perfect for trying out our classes</p>
+                    <ul>
+                        <li>60-minute session</li>
+                        <li>All levels welcome</li>
+                        <li>Basic equipment provided</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <button class="btn-primary" onclick="bookClass('Single Session', '₹500')">Book Now</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Monthly Package</h3>
+                    <div class="price">₹3,500</div>
+                    <p>Best value for regular practitioners</p>
+                    <ul>
+                        <li>8 sessions per month</li>
+                        <li>All class types included</li>
+                        <li>Priority booking</li>
+                        <li>Free equipment rental</li>
+                        <li>Progress tracking</li>
+                    </ul>
+                    <button class="btn-primary" onclick="bookClass('Monthly Package', '₹3,500')">Choose Plan</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Group Sessions</h3>
+                    <div class="price">₹300</div>
+                    <p>Per person for group classes</p>
+                    <ul>
+                        <li>60-minute group session</li>
+                        <li>Social atmosphere</li>
+                        <li>Motivational environment</li>
+                        <li>Shared learning</li>
+                    </ul>
+                    <button class="btn-primary" onclick="bookClass('Group Session', '₹300')">Join Group</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>3-Day Meditation Camp</h3>
+                    <div class="price">₹8,000</div>
+                    <p>Transformative meditation experience</p>
+                    <ul>
+                        <li>3-day intensive program</li>
+                        <li>Accommodation included</li>
+                        <li>Healthy meals provided</li>
+                        <li>Expert guidance</li>
+                        <li>Take-home materials</li>
+                    </ul>
+                    <button class="btn-primary" onclick="bookClass('3-Day Meditation Camp', '₹8,000')">Book Camp</button>
+                </div>
+            </div>
+            <div class="demo-offer">
+                <h3>Try Our Demo Class - 100% Money Back Guarantee!</h3>
+                <p>Not satisfied? Get a full refund, no questions asked.</p>
+                <button class="btn-secondary" onclick="bookDemoClass()">Book Demo Class</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"SoulTouchYoga has completely transformed my life. The teachers are amazing and the atmosphere is so peaceful. I've never felt more flexible and relaxed!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Anjali Sharma">
+                        </div>
+                        <div class="author-info">
+                            <h4>Anjali Sharma</h4>
+                            <p>Student for 2 years</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The 3-day meditation camp was life-changing. I learned so much about myself and found inner peace I never knew existed. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Rajesh Kumar">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Meditation Camp Participant</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a beginner, I was nervous about starting yoga. The teachers here are so patient and encouraging. Now I can't imagine my life without yoga!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Meera Patel">
+                        </div>
+                        <div class="author-info">
+                            <h4>Meera Patel</h4>
+                            <p>Beginner Student</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The group sessions are fantastic! The energy is amazing and I've made so many friends. The instructors are knowledgeable and caring."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="David Wilson">
+                        </div>
+                        <div class="author-info">
+                            <h4>David Wilson</h4>
+                            <p>Group Session Regular</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to Start Your Journey?</h3>
+                    <p>Contact us to book your first session or learn more about our programs.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9634016536</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>pinkynegi19996@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Srinagar Garhwal, Uttarakhand</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/919634016536" target="_blank" class="social-link whatsapp-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="sendWhatsAppMessage(event)">
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" placeholder="Your Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="contactClassType" required>
+                                <option value="">Select Class Type</option>
+                                <option value="Single Session">Single Session</option>
+                                <option value="Monthly Package">Monthly Package</option>
+                                <option value="Group Session">Group Session</option>
+                                <option value="3-Day Meditation Camp">3-Day Meditation Camp</option>
+                                <option value="Demo Class">Demo Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/919634016536" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SoulTouchYoga</h3>
+                    <p>Transform your life through the ancient practice of yoga and meditation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>+91 9634016536</li>
+                        <li>pinkynegi19996@gmail.com</li>
+                        <li>Srinagar Garhwal, Uttarakhand</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoulTouchYoga. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
